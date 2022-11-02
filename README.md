@@ -1,2 +1,2 @@
 # estudos
-Repositório com objetivo de colocar exercícios feitos
+Repositório com objetivo de colocar exercícios feitos.
