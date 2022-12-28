@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
+
+    <!--Não é mais de boa prática colocar type no html, então, sempre faça no CSS.-->
+
+    <style> 
+        ol {
+             list-style-type: 1;
+        }
+ 
+        ul {
+            list-style-type: disc;
+        }
+ </style>
+
 </head>
 <body>
     <h1>Trabalhando com Listas</h1>
     <h2>Listas Ordenadas</h2>
-    <ol type="1" start=""> <!--
+    <ol start=""> <!--
         Quatro tipos de Type: 
 
         1: Padrão
@@ -34,7 +47,7 @@
         <!--Fechamento de "li" é opcional no html5-->
     </ol>
     <h2>Listas não ordenadas</h2>
-    <ul type="square">
+    <ul>
         <li>Pão
         <li>Leite
         <li>Tomate
@@ -50,5 +63,69 @@
     
     -->
     <!--</ já fecha automaticamente-->
+
+    <!--SÓ EXEMPLO QUE FIZ!!-->
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol>
+            <li>Clipper</li>
+            <li>Visual Basics</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol start="4">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>PS5</li>
+        <ul>
+            <li>God of Ragnarok</li>
+            <li>Horizon Forbidden West</li>
+            <li>Call of Duty: Modern Warfare II</li>
+        </ul>
+        
+        <li>PS4</li>
+        <ul>
+    
+            <li>The Last of Us</li>
+            <ul style="list-style-type: circle; ">
+                <li>The Last of Us 2</li>
+            </ul>
+            <li>Horizon Zero Dawn</li>
+        </ul>
+        
+        <li>Nintendo</li>
+        <ul>
+            <li>Animal Crossing: New Horizons</li>
+            <li>The Legend of Zelda: Breath of the Wild</li>
+            <li>Nintendo Jogo Mario Kart 8 Deluxe</li>
+        </ul>
+    </ol>
+ <!--Não é alinhamento, e sim aninhamento-->
+ <!--O certo não é colocar o start, mas deixei por curiosidade-->
+ <!--Mudar tags de uma vez clica no que quer mudar pressionando Alt, solta e apaga, depois clica Alt de novo, que sai.-->
+
+ <h2>Lista de Definições</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do contéudo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de Programação para a criação de interavidade de um site.</dd>
+  </dl>
+  <!--Dl : Lista de Definição
+    Dt : Definição de termo
+    DD: Definição de descrição
+
+    Google dá valor para sites com lista de definição
+    Normalmente é preferível usar as outras listas.-->
 </body>
 </html>
