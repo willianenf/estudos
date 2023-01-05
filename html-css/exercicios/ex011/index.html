@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+
+        <!--Aqui diz que o máximo da janela é 1050px(1000 deixa uma folguinha ainda/rolagem), passou se transforma na imagem debaixo. Aí adicionamos mais 50px, que é a largura da barra de rolagem.-->
+
+        <img src="img/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--NÃO SE ESQUECE DA ORDEM DO SOURCE.-->
+
+    <!--Picture - Essa tag permite você crie vários sources, várias fontes. A ordem da colocação das imagens é importante, sendo da maior para a menor, ou vice versa. Se preocupe em não ter rolagem lateral, e se o usúario for embora por causa disso, isso faz aumentar uma taxa que o google cahma de bounce rate ou seja rejeição. Ela dá valor ou desvaloriza seu site. Altos bounce rate o google considera seu site ruim. -->
+
+    <!--Adapta suas imagens e seu site para o tamanho da tela do seu usuário. -->
+
+    <!--Dica para pegar efeito sonoro de boa, youtube studio, biblioteca de áudio. Atribuição necessária : Além colocar o aúdio no seu site, você tem que colocar o texto escrito que eles dão clicando no em cima da música aparece.
+    Atribuição não necessária : Você não precisa adicionar isso no seu site. -->
+
+    <!--Tudo sobre imagem, seja direitos, tamanhos... serve para midia, serve para áudio-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/smokeyslounge-tracktribe.mp3" controls autopla loop></audio>
+
+    <!--O AUTOPLAY QUEBRADO É PROPOSITAL!-->
+
+    <!--Esse meio tá um pouco ultrapassado, então, use com source, como foi feito abaixo-->
+
+    <!--Autoplay : Para fazer o áudio iniciar automaticamente. O autoplay não tem compatibilidade, e até o mp3, em alguns navegadores como o Google Chrome. Mas no caso do áudio precisamos de outros formatos de arquivo.
+        MP3 WAV (evita eles, por serem grandes) OGG 
+    Controls : Aperecer o pause.-->
+
+    <audio preload="metadata" controls autopla loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3" download="" type="audio/mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <!--A ordem do áudio é importante aqui também-->
+    <!--Se quiser ver mais types, entre no link nas partes de de links 
+    Preload : 
+auto : é o padrão, mas perigoso por carregar primeiro 
+metadata : carrega poucas coisas, como data, duração...
+none : não carrega nada até o usuário apertar play 
+
+loop é para a música ficar repetindo, tocando no fundo-->
+
+<!--Imagens top, qualidade top apenas para arquivos download, não de navegação. -->
+</body>
+</html>
