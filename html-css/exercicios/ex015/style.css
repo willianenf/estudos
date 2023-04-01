@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Caso você use o CSS avançado pode dar problemas com acentuação, por isso, usamos essa regra no inicio do css*/
+
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: maroon;
+    background-color: goldenrod;
+}
+h2{
+    /*declaração 
+    propriedade/valor*/
+    color: darkred;
+}
+p{
+    /*alinha os paragráfos*/
+    text-align: justify;
+}
